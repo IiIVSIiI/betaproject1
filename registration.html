@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Sample</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="registration.html">Регистрация</a>
+            <a href="form.html">Войти</a>
+        </nav>
+    </header>
+
+    <main>
+        <h3>Для регистрации на сайте заполните форму:</h3>
+        <form method="POST" action="https://formspree.io/ijivsiji@gmail.com">
+
+            <label>
+                Имя: <input type="text" placeholder="Ваше имя" name="client-name" required>
+            </label>
+            <br>
+            <br>
+            <label>
+            Фамилия: <input type="text" placeholder="Ваша фамилия" name="client-surname" required>
+        </label>
+            <br>
+            <br>
+            <label>
+                 Емейл: <input type="email" placeholder="Email" name="client-email" required>
+            </label>
+            <br>
+            <br>
+            <label>
+                Дата рождения:<input type="date" name="client-birthday" required>
+            </label>
+            <br>
+            <br>
+            <label>Пароль: 
+            <input type="password" placeholder="Желаемый пароль" 
+              name="client-password1" required></label>
+            <br>
+            <br>
+            <label>
+                Повторите пароль: <input type="password" placeholder="*********" name="client-password2" required>
+            </label>
+            <br>
+            <br>
+            <label>
+                Ваш номер телефона: <input type="text" placeholder="+38(0**)*******" name="client-phone-number">
+            </label>
+            <br>
+            <br>
+            <label>Пол:</label>
+            <label>
+                <input type="radio" name="gender" value="Male" required> Мужчина 
+            </label>
+            <label>
+                <input type="radio" name="gender" value="Female" required> Женщина 
+            </label>
+            <label>
+                <input type="radio" name="gender" value="Other" required> Существо 
+            </label>
+            <br>
+            <br>
+            <label>
+                Получать новости от нас: <input type="checkbox" name="News-for-client" checked> 
+            </label>
+            <br>
+            <br>
+            <input type="submit">
+
+        </form>
+    </main>
+
+</body>
+
+</html>
